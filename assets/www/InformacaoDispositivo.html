@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>PhoneGap</title>
+ <script type="text/javascript" src="cordova-2.7.0.js"></script>
+ <script type="text/javascript" src="InformacaoDispositivo.js"></script>
+ <script> function init() {
+document.addEventListener("deviceready", onDeviceReady, true);
+} 
+</script> 
+</head>
+<body onLoad="init();">
+ <h1>Informações do Dispositivo</h1>
+ <table border="1">
+ <tr>
+ <td>Nome do Dispositivo</td>
+ <td id="deviceName"></td>
+ </tr>
+ <tr>
+ <td>Versão PhoneGap</td>
+ <td id="version"></td>
+ </tr>
+ <tr>
+ <td>Plataforma Mobile</td>
+ <td id="mobilePlatform"></td>
+ </tr>
+<tr>
+ <td>Versão da Plataforma</td>
+ <td id="platformVersion"></td>
+ </tr>
+ <tr>
+ <td>UUID</td>
+ <td id="uuid"></td>
+ </tr>
+ </table>
+</body>
+</html>
